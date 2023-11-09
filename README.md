@@ -1,6 +1,9 @@
 # LangChain_Azure
 LangChain on Microsoft Azure
 
+## 參考教程
+https://www.youtube.com/@codingcrashcourses8533
+
 ## 環境
 
 ```bash
