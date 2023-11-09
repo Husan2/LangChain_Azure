@@ -2,15 +2,17 @@
 LangChain on Microsoft Azure
 
 ## 環境
+
+```bash
 conda create --name LangChain_Azure python=3.10.6
 activate LangChain_Azure
 conda install -c conda-forge azure-storage-blob  #12.19.0
 conda install -c conda-forge langchain           #0.0.331
 conda install -c conda-forge openai              #1.1.2
-
 conda install -c conda-forge python-dotenv       #1.0.0
-conda install -c conda-forge streamlit           #1.28.1
+conda install -c conda-forge streamlit           #1.24.1
 pip install streamlit-chat                       #0.1.1
+```
 
 1. **Azure Container Registry**: To manage the Docker images.
 2. **App Services**: Where the application will be hosted.
@@ -33,7 +35,6 @@ embeddings 建立後，儲存在 Azure Search index，以便隨時可用於快�
 
 ### `application.py`
 
- and an appropriate answer is retrieved or generated. Past interactions can be reviewed in the session.
 使用 Streamlit 作為對話 UI 
 在 OpenAI's model 與 Azure Cognitive Search 處理使用者輸入的問題(input)
 產生 / 檢索(retrieved) 合適的 answer
